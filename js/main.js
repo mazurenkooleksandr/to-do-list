@@ -50,8 +50,8 @@ function addToDo(toDo, id, done, trash) {
     list.insertAdjacentHTML(position, item);
 }
 
-document.addEventListener("keyup",function(even) {
-    if(event.keyCode == 13){
+document.addEventListener("keyup", function (e) {
+    if(e.keyCode == 13){
         const toDo = input.value;
         if(toDo){
             addToDo(toDo, id, false, false);
@@ -69,6 +69,26 @@ document.addEventListener("keyup",function(even) {
         input.value = "";
     }
 });
+
+function firsttaskFun () {
+    if("onclick"){
+        const toDo = input.value;
+        if(toDo){
+            addToDo(toDo, id, false, false);
+
+            LIST.push({
+                name : toDo,
+                id : id,
+                done : false,
+                trash : false
+            });
+            
+            localStorage.setItem("ToDo", JSON.stringify(LIST));
+            id++;
+        }
+        input.value = "";
+    }
+}
 
 function completeToDo(element) {
     element.classList.toggle(CHECK);
