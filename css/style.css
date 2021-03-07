@@ -22,12 +22,33 @@ body{
 .header{
     width: 100%;
     max-width: 380px;
-    height:200px;
-    background-image: url('../img/TO-DO-LIST-\(2\).gif');
+    height: 150px;
+    background-image: url('../img/TO-DO-LIST-\(3\).gif');
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
     position: relative;
+}
+.weather-block {
+    display: flex;
+    color: #FFF;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 10px;
+}
+
+.weather-block__degrees {
+    padding-left: 10px;
+}
+
+.weather-block__icons {
+    margin-top: -25px;
+    width: 10px;
+    height: 10px;
+}
+
+.weather-block__disclaimer {
+    margin-top: -15px;
+    font-size: 1.05rem;
 }
 .clear{
     width : 30px;
@@ -180,6 +201,17 @@ button {
 }
 
 @media screen and (max-width: 400px) {
+    .header{
+        width: 100%;
+        max-width: 380px;
+        height: 150px;
+        background-image: url('../img/TO-DO-LIST-\(3\).gif');
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        border-radius: 15px 15px 0 0;
+        position: relative;
+    }
+
     .container{
         padding: 0px;
         width: 100%;

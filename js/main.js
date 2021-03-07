@@ -117,3 +117,15 @@ list.addEventListener("click", function(event){
     
     localStorage.setItem("ToDo", JSON.stringify(LIST));
 });
+
+fetch('http://api.openweathermap.org/data/2.5/weather?q=Vinnytsia&appid=41a3c036f496bacf57632c46c5e3b68e')
+
+    .then(function(resp){ return resp.json() })
+    .then(function(data) {
+        console.log(data);
+        document.querySelector('.weather-block__city').textContent = data.name;
+        document.querySelector('.weather-block__degrees').innerHTML = Math.round(data.main.temp - 273) + "&deg;";
+        document.querySelector('.weather-block__disclaimer').textContent = data.weather[0]['description'];
+        document.querySelector('.weather-block__icons').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png" width="40px">`
+
+    });
