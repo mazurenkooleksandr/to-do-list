@@ -118,7 +118,7 @@ list.addEventListener("click", function(event){
     localStorage.setItem("ToDo", JSON.stringify(LIST));
 });
 
-fetch('http://api.openweathermap.org/data/2.5/weather?q=Vinnytsia&appid=41a3c036f496bacf57632c46c5e3b68e')
+fetch('https://api.openweathermap.org/data/2.5/weather?q=Vinnytsia&appid=41a3c036f496bacf57632c46c5e3b68e')
 
     .then(function(resp){ return resp.json() })
     .then(function(data) {
