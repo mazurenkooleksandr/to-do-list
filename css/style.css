@@ -218,17 +218,6 @@ button {
         max-width:380px;
         margin:0 auto;
     }
-    
-    .header{
-        width: 100%;
-        max-width: 380px;
-        height:150px;
-        background-image: url('../img/TO-DO-LIST-\(3\).gif');
-        background-size: 100% 200%;
-        background-repeat: no-repeat;
-        border-radius: 0;
-        position: relative;
-    }
 
 }
 
@@ -261,6 +250,17 @@ button {
         bottom: 12px;
         font-size: 2.5rem;
         color: #4162f6;
+    }
+
+    .header{
+        width: 100%;
+        max-width: 380px;
+        height:150px;
+        background-image: url('../img/TO-DO-LIST-\(3\).gif');
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        position: relative;
     }
 
 }
@@ -296,6 +296,17 @@ button {
         color: #4162f6;
     }
 
+    .header{
+        width: 100%;
+        max-width: 380px;
+        height:150px;
+        background-image: url('../img/TO-DO-LIST-\(3\).gif');
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        position: relative;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -329,6 +340,17 @@ button {
         color: #4162f6;
     }
 
+    .header{
+        width: 100%;
+        max-width: 380px;
+        height:150px;
+        background-image: url('../img/TO-DO-LIST-\(3\).gif');
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        position: relative;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -360,6 +382,17 @@ button {
         bottom: 12px;
         font-size: 2.5rem;
         color: #4162f6;
+    }
+
+    .header{
+        width: 100%;
+        max-width: 380px;
+        height:150px;
+        background-image: url('../img/TO-DO-LIST-\(3\).gif');
+        background-size: 100% 200%;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        position: relative;
     }
 
 }
